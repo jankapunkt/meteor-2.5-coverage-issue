@@ -1,16 +1,16 @@
 if (Meteor.isClient) {
   describe('client', function () {
-    import '../client'
+    import '../client/mul.tests'
   })
 }
 
 if (Meteor.isServer) {
   describe('server', function () {
-    import '../server'
+    import '../server/sub.tests'
   })
 }
 
 describe('both', function () {
-  import '../imports'
+  import '../imports/add.tests'
 })
 
